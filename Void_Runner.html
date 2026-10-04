@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="theme-color" content="#0b0b0b" />
+    <style>
+      html:not(.i18n-ready) body {
+        visibility: hidden;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/site/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/site/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/site/favicon-192.png"
+    />
+    
+    <title>Void Runner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/stamp.css" />
+    <noscript>
+      <style>
+        html body {
+          visibility: visible !important;
+        }
+        .reveal,
+        .reveal-left,
+        .reveal-scale,
+        .split-chars,
+        .stamp-row .rubber {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="js/theme.js"></script>
+  </head>
+  <body class="theme-stamp page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          
+          <span data-i18n="brand.name">YOUR NAME</span>
+        </a>
+
+        <button
+          class="icon-btn nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+          data-i18n="nav.menu"
+          data-i18n-attr="aria-label"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="site-nav" data-nav-links>
+          <li><a href="index.html#games" data-i18n="nav.games">Games</a></li>
+          <li>
+            <a href="index.html#devlogs" data-i18n="nav.devlogs">Devlogs</a>
+          </li>
+          <li>
+            <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+          </li>
+          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+          <li>
+            <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <select class="lang-select" data-lang-select aria-label="Language">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+          </select>
+          <button
+            class="icon-btn"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+            data-i18n="nav.theme"
+            data-i18n-attr="aria-label"
+          >
+            <span class="theme-icon-dark" aria-hidden="true">☾</span>
+            <span class="theme-icon-light" aria-hidden="true">☀</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="reveal">
+            <a class="back-link" href="index.html#games" data-i18n="game.back"
+              >← All games</a
+            >
+          </p>
+          
+          <h1 class="reveal" data-i18n="void_runner.title">Void Runner</h1>
+          <p class="section-lead reveal" data-i18n="void_runner.lede">
+            Parkour your way through strange floating islands, fight enemies,
+            and survive as long as you can in this Titanfall 2 inspired game.
+          </p>
+          <div class="tag-row reveal stamp-row" style="margin-top: 1rem">
+            <span class="rubber">Parkour</span>
+            <span class="rubber">Windows</span>
+            <span class="rubber">GameJam</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" id="play">
+        <div class="container">
+          <div class="download-panel reveal">
+            <div class="download-panel-copy">
+              <p class="eyebrow" data-i18n="void_runner.download.eyebrow">
+                Desktop build
+              </p>
+              <h2 class="section-title" data-i18n="void_runner.download.title">
+                Download on itch.io
+              </h2>
+              <p class="section-lead" data-i18n="void_runner.download.text">
+                Void Runner is a downloadable Windows build - not playable in
+                the browser. Grab it on itch.io.
+              </p>
+              <div class="btn-row" style="margin-top: 1.1rem">
+                <a
+                  class="btn magnetic"
+                  href="https://kemus.itch.io/void-runner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="embed.gate.itch"
+                  >Open on itch.io</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" id="screenshots">
+        <div class="container stack-lg">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="game.shots">
+              Screenshots
+            </h2>
+          </div>
+          <div class="shot-grid">
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/void-runner/1.gif"
+                alt="Void Runner screenshot 1"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/void-runner/2.gif"
+                alt="Void Runner screenshot 2"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/void-runner/3.gif"
+                alt="Void Runner screenshot 3"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/void-runner/4.gif"
+                alt="Void Runner screenshot 4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-game">
+        <div class="container split-2">
+          <div class="reveal">
+            <h2 class="section-title" data-i18n="game.about">
+              About this game
+            </h2>
+            <div class="prose">
+              
+              <p></p>
+            </div>
+            
+            <div class="accordion" style="margin-top: 1.5rem">
+              <details class="accordion-item">
+                <summary>Features</summary>
+                <div class="accordion-panel">
+                  <ul>
+                    <li>First-person parkour inspired by Titanfall 2</li>
+                    <li>Strange floating islands in a hostile void</li>
+                    <li>Combat against advancing enemies</li>
+                    <li>Tutorial arena in the main menu</li>
+                    <li>Global leaderboard - survive as long as you can</li>
+                    <li>Windows download build (Brackeys Game Jam 2026.1)</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="accordion-item">
+                <summary>Controls</summary>
+                <div class="accordion-panel">
+                  <ul>
+                    <li><strong>WASD</strong> - move</li>
+                    <li><strong>Shift</strong> - toggle sprint</li>
+                    <li><strong>Ctrl</strong> - crouch</li>
+                    <li><strong>Space</strong> - jump</li>
+                    <li><strong>RMB</strong> - dash</li>
+                    <li><strong>LMB</strong> - fireball</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="stack-lg reveal" style="--delay: 80ms">
+            <div>
+              <h3 class="card-title" data-i18n="game.links">Links</h3>
+              <ul class="contact-list" style="margin-top: 0.85rem">
+                <li>
+                  <a
+                    href="https://kemus.itch.io/void-runner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span>itch.io</span>Void Runner</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-legal">
+          
+          <p data-i18n="footer.rights">
+            © 2026 YOUR NAME. All rights reserved. All content on this site -
+            including games, media, text, and branding - belongs to YOUR NAME
+            unless otherwise stated.
+          </p>
+          <p data-i18n="footer.note">
+            Unauthorized copying or redistribution is prohibited.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/stamp.js"></script>
+  </body>
+</html>

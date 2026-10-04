@@ -1,0 +1,481 @@
+﻿<!doctype html>
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="description" content="Portfolio - games, devlogs, projects" />
+    <meta name="theme-color" content="#0b0b0b" />
+    
+    <style>
+      html:not(.i18n-ready) body {
+        visibility: hidden;
+      }
+    </style>
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/site/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/site/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/site/favicon-192.png"
+    />
+    
+    <title>Kemus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/base.css?v=7" />
+    <link rel="stylesheet" href="css/stamp.css?v=9" />
+    <noscript>
+      <style>
+        /* No JS: show page + skip reveal animations */
+        html body {
+          visibility: visible !important;
+        }
+        .reveal,
+        .reveal-left,
+        .reveal-scale,
+        .split-chars,
+        .stamp-row .rubber {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="js/theme.js"></script>
+  </head>
+  <body class="theme-stamp page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          
+          <span class="brand-mark" aria-hidden="true"></span>
+          
+          <span data-i18n="brand.name">YOUR NAME</span>
+        </a>
+
+        <button
+          class="icon-btn nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+          data-i18n="nav.menu"
+          data-i18n-attr="aria-label"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="site-nav" data-nav-links>
+          <li><a href="#games" data-i18n="nav.games">Games</a></li>
+          <li><a href="#devlogs" data-i18n="nav.devlogs">Devlogs</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <select class="lang-select" data-lang-select aria-label="Language">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+          </select>
+          <button
+            class="icon-btn"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+            data-i18n="nav.theme"
+            data-i18n-attr="aria-label"
+          >
+            <span class="theme-icon-dark">☾</span>
+            <span class="theme-icon-light">☀</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="ink-blot b1" aria-hidden="true"></div>
+        <div class="ink-blot b2" aria-hidden="true"></div>
+
+        <div class="container poster">
+          
+          <div class="stamp-row reveal">
+            <span class="rubber">Indie</span>
+            <span class="rubber">Devlogs</span>
+            <span class="rubber">Playable</span>
+            <span class="rubber">Shipping</span>
+          </div>
+
+          
+          <h1 data-split data-i18n="brand.name">YOUR NAME</h1>
+
+          
+          <p class="lede reveal" data-i18n="hero.lede">
+            I make games, share the process through devlogs and YouTube, and
+            build other projects on the side.
+          </p>
+
+          <div class="btn-row reveal" style="--delay: 100ms">
+            
+            <a class="btn magnetic" href="#games" data-i18n="hero.cta.games"
+              >Play my games</a
+            >
+            <a
+              class="btn btn-ghost magnetic"
+              href="#contact"
+              data-i18n="hero.cta.contact"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="games">
+        <div class="section-index" aria-hidden="true">01</div>
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="nav.games">Games</p>
+            <h2 class="section-title" data-i18n="games.title">
+              Playable builds & releases
+            </h2>
+          </div>
+        </div>
+
+        
+        <div class="release-reel-wrap reveal" data-release-reel>
+          <div class="release-reel" data-reel-scroller aria-label="Games">
+            <div class="release-reel-track">
+              
+              <a
+                class="release-tile"
+                href="Astro_Dash.html"
+                draggable="false"
+                data-shots="assets/games/astro-dash/1.png,assets/games/astro-dash/2.png"
+                data-poster="assets/games/astro-dash/cover.png"
+                data-poster-fit="cover"
+                data-poster-pos="center bottom"
+              >
+                <div class="release-tile-media">
+                  
+                  <span
+                    class="release-tile-placeholder"
+                    data-i18n="media.placeholder"
+                    >Replace with your media</span
+                  >
+                </div>
+                <div class="release-tile-meta">
+                  <span class="release-tile-tag">GameJam · Genre</span>
+                  <strong class="release-tile-title">Astro Dash</strong>
+                </div>
+              </a>
+
+              
+              <a
+                class="release-tile"
+                href="Humaning.html"
+                draggable="false"
+                data-shots="assets/games/humaning/1.png,assets/games/humaning/2.png,assets/games/humaning/3.png,assets/games/humaning/4.png"
+                data-poster="assets/games/humaning/cover.png"
+                data-poster-fit="cover"
+                data-poster-pos="center bottom"
+              >
+                <div class="release-tile-media">
+                  <span
+                    class="release-tile-placeholder"
+                    data-i18n="media.placeholder"
+                    >Replace with your media</span
+                  >
+                </div>
+                <div class="release-tile-meta">
+                  <span class="release-tile-tag">GameJam · Genre</span>
+                  <strong class="release-tile-title">Humaning</strong>
+                </div>
+              </a>
+
+              
+              <a
+                class="release-tile"
+                href="Void_Runner.html"
+                draggable="false"
+                data-shots="assets/games/void-runner/1.gif,assets/games/void-runner/2.gif,assets/games/void-runner/3.gif,assets/games/void-runner/4.gif"
+                data-poster="assets/games/void-runner/cover.gif"
+                data-poster-fit="cover"
+                data-poster-pos="center bottom"
+              >
+                <div class="release-tile-media">
+                  <span
+                    class="release-tile-placeholder"
+                    data-i18n="media.placeholder"
+                    >Replace with your media</span
+                  >
+                </div>
+                <div class="release-tile-meta">
+                  <span class="release-tile-tag">GameJam · Genre</span>
+                  <strong class="release-tile-title">Void Runner</strong>
+                </div>
+              </a>
+
+              
+              <a
+                class="release-tile"
+                href="Skulds_Bargain.html"
+                draggable="false"
+                data-shots="assets/games/skulds-bargain/1.png,assets/games/skulds-bargain/2.png,assets/games/skulds-bargain/3.png"
+                data-poster="assets/games/skulds-bargain/cover.png"
+                data-poster-fit="cover"
+                data-poster-pos="center bottom"
+              >
+                <div class="release-tile-media">
+                  <span
+                    class="release-tile-placeholder"
+                    data-i18n="media.placeholder"
+                    >Replace with your media</span
+                  >
+                </div>
+                <div class="release-tile-meta">
+                  <span class="release-tile-tag">GameJam · Genre</span>
+                  <strong class="release-tile-title">Skuld's Bargain</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="devlogs">
+        <div class="section-index" aria-hidden="true">02</div>
+        <div class="container stack-lg">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="devlogs.eyebrow">Devlogs & video</p>
+            <h2 class="section-title" data-i18n="devlogs.title">
+              Process on YouTube & socials
+            </h2>
+            <p class="section-lead" data-i18n="devlogs.lead">
+              Nothing posted yet - YouTube and socials are coming soon.
+            </p>
+          </div>
+
+          <div class="split-2">
+            
+            <div class="embed-frame reveal">
+              
+              <div class="placeholder-block" data-i18n="devlogs.youtube.soon">
+                Nothing here yet - YouTube videos coming soon.
+              </div>
+            </div>
+            
+            <div class="tweet-panel reveal" style="--delay: 100ms">
+              <div class="panel-label" data-i18n="devlogs.tweet">
+                Latest post
+              </div>
+              <div class="placeholder-block" data-i18n="devlogs.tweet.soon">
+                Nothing here yet - social posts coming soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-index" aria-hidden="true">03</div>
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="projects.eyebrow">Other projects</p>
+            <h2 class="section-title" data-i18n="projects.title">
+              Not only games
+            </h2>
+          </div>
+
+          
+          <div class="card-grid">
+            
+            <a class="card card-wide reveal" href="3D_Rubiks_Cube_OpenTK.html">
+              
+              <div class="card-media">
+                <img
+                  src="assets/projects/rubiks-cube/cover.png"
+                  alt="Rubik's Cube Cover"
+                />
+              </div>
+              <div class="card-body">
+                
+                <p class="card-meta" data-i18n="projects.card1.meta">
+                  3D · 2025
+                </p>
+                <h3 class="card-title" data-i18n="rubik.title">
+                  Rubik's Cube
+                </h3>
+                <p class="card-text" data-i18n="projects.card1.text">
+                  A 3D Rubik’s Cube simulation built with OpenTK and C#.
+                </p>
+                <span class="card-cta" data-i18n="preview.open"
+                  >Open page →</span
+                >
+              </div>
+            </a>
+            
+            <a class="card card-wide reveal" href="Moodle_Quiz_Solver.html">
+              <div class="card-media">
+                <img
+                  src="assets/projects/moodle-quiz-solver/cover.png"
+                  alt="Moodle Quiz Solver Cover"
+                />
+              </div>
+              <div class="card-body">
+                
+                <p class="card-meta" data-i18n="projects.card2.meta">
+                  Tool · 2026
+                </p>
+                <h3 class="card-title" data-i18n="quiz.title">
+                  Moodle Quiz Solver
+                </h3>
+                <p class="card-text" data-i18n="quiz.lede">
+                  Multi-agent Moodle quiz automation with majority voting, a
+                  desktop control panel, Telegram/Discord remote control, and
+                  continuous attempt monitoring.
+                </p>
+                <span class="card-cta" data-i18n="preview.open"
+                  >Open page →</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-index" aria-hidden="true">04</div>
+        <div class="container split-2">
+          <div class="reveal">
+            <p class="eyebrow" data-i18n="nav.about">About</p>
+            
+            <h2 class="section-title" data-i18n="about.title">
+              Student · games · apps
+            </h2>
+            <p class="section-lead" data-i18n="about.lead">
+              Kemus. Studying programming in Poland. I make games and apps when
+              I want - or when I need them.
+            </p>
+            <div class="prose" style="margin-top: 1.25rem">
+              <p data-i18n="about.body">
+                I do a lot of game jams, and I also build games just for myself.
+                Side tools show up in between. This site is the dump of what's
+                ready to share.
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="accordion reveal" style="--delay: 90ms"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-index" aria-hidden="true">05</div>
+        <div class="container split-2">
+          <div class="reveal">
+            <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+            <h2 class="section-title" data-i18n="contact.title">Say hello</h2>
+          </div>
+          
+          <ul class="contact-list reveal">
+            <li>
+              
+              <a href="mailto:kemuus.dev@gmail.com"
+                ><span data-i18n="contact.email">Email</span>
+                kemuus.dev@gmail.com</a
+              >
+            </li>
+            <li>
+              
+              <a
+                href="https://github.com/STLKem"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="contact.github">GitHub</span>
+                github.com/STLKem
+              </a>
+            </li>
+            <li>
+              
+              <a
+                href="https://youtube.com/@KemusDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="contact.youtube">YouTube</span> @KemusDev
+              </a>
+            </li>
+            <li>
+              
+              <a
+                href="https://x.com/KemusDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="contact.twitter">X / Twitter</span> @KemusDev
+              </a>
+            </li>
+            <li>
+              
+              <a
+                href="https://kemus.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="contact.itch">itch.io</span> kemus.itch.io
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-legal">
+          
+          <p data-i18n="footer.rights">
+            © 2026 YOUR NAME. All rights reserved. All content on this site -
+            including games, media, text, and branding - belongs to YOUR NAME
+            unless otherwise stated.
+          </p>
+          <p data-i18n="footer.note">
+            Unauthorized copying or redistribution is prohibited.
+          </p>
+        </div>
+        <div class="footer-seal" aria-hidden="true">
+          All rights<br />reserved<br /><span data-year></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js?v=6"></script>
+    <script src="js/main.js?v=6"></script>
+    <script src="js/animations.js?v=5"></script>
+    <script src="js/stamp.js?v=5"></script>
+    <script src="js/reel.js?v=7"></script>
+  </body>
+</html>

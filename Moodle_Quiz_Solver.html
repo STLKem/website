@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Moodle Quiz Solver" />
+    <meta name="theme-color" content="#0b0b0b" />
+    <style>
+      html:not(.i18n-ready) body {
+        visibility: hidden;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/site/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/site/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/site/favicon-192.png"
+    />
+    <title>Moodle Quiz Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/stamp.css" />
+    <noscript>
+      <style>
+        html body {
+          visibility: visible !important;
+        }
+        .reveal,
+        .reveal-left,
+        .reveal-scale,
+        .split-chars,
+        .stamp-row .rubber {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="js/theme.js"></script>
+  </head>
+  <body class="theme-stamp page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span data-i18n="brand.name">Kemus</span>
+        </a>
+
+        <button
+          class="icon-btn nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+          data-i18n="nav.menu"
+          data-i18n-attr="aria-label"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="site-nav" data-nav-links>
+          <li><a href="index.html#games" data-i18n="nav.games">Games</a></li>
+          <li>
+            <a href="index.html#devlogs" data-i18n="nav.devlogs">Devlogs</a>
+          </li>
+          <li>
+            <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+          </li>
+          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+          <li>
+            <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <select class="lang-select" data-lang-select aria-label="Language">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+          </select>
+          <button
+            class="icon-btn"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+            data-i18n="nav.theme"
+            data-i18n-attr="aria-label"
+          >
+            <span class="theme-icon-dark" aria-hidden="true">☾</span>
+            <span class="theme-icon-light" aria-hidden="true">☀</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="reveal">
+            <a
+              class="back-link"
+              href="index.html#projects"
+              data-i18n="project.back"
+              >← All projects</a
+            >
+          </p>
+          
+          <h1 class="reveal" data-i18n="quiz.title"></h1>
+          <p class="section-lead reveal" data-i18n="quiz.lede"></p>
+          
+          <div class="tag-row reveal stamp-row" style="margin-top: 1rem">
+            <span class="rubber">Tool</span>
+            <span class="rubber">2026</span>
+            <span class="rubber">Solo</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section media-band" id="screenshots">
+        <div class="container stack-lg">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="game.shots">Screenshots</h2>
+          </div>
+          <div class="shot-grid">
+            <div class="shot-frame reveal">
+              <img
+                src="assets/projects/moodle-quiz-solver/1.png"
+                alt="Moodle Quiz Solver screenshot 1"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/projects/moodle-quiz-solver/2.png"
+                alt="Moodle Quiz Solver screenshot 2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-project">
+        <div class="container split-2">
+          <div class="reveal">
+            <h2 class="section-title" data-i18n="project.about">About</h2>
+            <div class="accordion" style="margin-top: 1.5rem">
+              <details class="accordion-item">
+                <summary data-i18n="rubik.stack">Stack</summary>
+                <div class="accordion-panel" data-i18n="quiz.stack.body"></div>
+              </details>
+            </div>
+          </div>
+
+          <div class="stack-lg reveal" style="--delay: 80ms">
+            <div>
+              <h3 class="card-title" data-i18n="game.links">Links</h3>
+              <ul class="contact-list" style="margin-top: 0.85rem">
+                <li>
+                  <a
+                    href="https://github.com/STLKem/Moodle-Quiz-Solver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="rubik.link.repo">Repo</span> GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-legal">
+          <p data-i18n="footer.rights">
+            © 2026 Kemus. All rights reserved. All content on this site -
+            including games, media, text, and branding - belongs to Kemus unless
+            otherwise stated.
+          </p>
+          <p data-i18n="footer.note">
+            Unauthorized copying or redistribution is prohibited.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/stamp.js"></script>
+  </body>
+</html>

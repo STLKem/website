@@ -1,0 +1,271 @@
+<!doctype html>
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="theme-color" content="#0b0b0b" />
+    <style>
+      html:not(.i18n-ready) body {
+        visibility: hidden;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/site/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/site/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/site/favicon-192.png"
+    />
+    
+    <title>Skuld's Bargain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/stamp.css" />
+    <noscript>
+      <style>
+        html body {
+          visibility: visible !important;
+        }
+        .reveal,
+        .reveal-left,
+        .reveal-scale,
+        .split-chars,
+        .stamp-row .rubber {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="js/theme.js"></script>
+  </head>
+  <body class="theme-stamp page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          
+          <span data-i18n="brand.name">YOUR NAME</span>
+        </a>
+
+        <button
+          class="icon-btn nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu"
+          data-i18n="nav.menu"
+          data-i18n-attr="aria-label"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="site-nav" data-nav-links>
+          <li><a href="index.html#games" data-i18n="nav.games">Games</a></li>
+          <li>
+            <a href="index.html#devlogs" data-i18n="nav.devlogs">Devlogs</a>
+          </li>
+          <li>
+            <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+          </li>
+          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+          <li>
+            <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <select class="lang-select" data-lang-select aria-label="Language">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+          </select>
+          <button
+            class="icon-btn"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+            data-i18n="nav.theme"
+            data-i18n-attr="aria-label"
+          >
+            <span class="theme-icon-dark" aria-hidden="true">☾</span>
+            <span class="theme-icon-light" aria-hidden="true">☀</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="reveal">
+            <a class="back-link" href="index.html#games" data-i18n="game.back"
+              >← All games</a
+            >
+          </p>
+          
+          <h1 class="reveal" data-i18n="skulds_bargain.title">Game Title</h1>
+          <p class="section-lead reveal" data-i18n="skulds_bargain.lede">
+            Short pitch / status line. Replace with your elevator pitch.
+          </p>
+          
+          <div class="tag-row reveal stamp-row" style="margin-top: 1rem">
+            <span class="rubber">Dungeon Crawler</span>
+            <span class="rubber">Web</span>
+            <span class="rubber">GameJam</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" id="play">
+        <div class="container stack-lg">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="game.play">
+              Play on this page
+            </h2>
+          </div>
+          <div
+            class="embed-frame embed-tall embed-itch reveal"
+            data-itch-embed
+            data-itch-url="https://scumpii.itch.io/skulds-bargain"
+          >
+            <template data-embed-markup>
+              <iframe
+                frameborder="0"
+                src="https://itch.io/embed-upload/19057555?color=000000"
+                allowfullscreen
+                width="1280"
+                height="720"
+              ></iframe>
+            </template>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" id="screenshots">
+        <div class="container stack-lg">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="game.shots">
+              Screenshots
+            </h2>
+          </div>
+          <div class="shot-grid">
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/skulds-bargain/1.png"
+                alt="Skuld's Bargain screenshot 1"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/skulds-bargain/2.png"
+                alt="Skuld's Bargain screenshot 2"
+              />
+            </div>
+            <div class="shot-frame reveal">
+              <img
+                src="assets/games/skulds-bargain/3.png"
+                alt="Skuld's Bargain screenshot 3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-game">
+        <div class="container split-2">
+          <div class="reveal">
+            <h2 class="section-title" data-i18n="game.about">
+              About this game
+            </h2>
+            <div class="prose">
+              
+              <p></p>
+            </div>
+            
+            <div class="accordion" style="margin-top: 1.5rem">
+              <details class="accordion-item">
+                <summary>Features</summary>
+                <div class="accordion-panel">
+                  <ul>
+                    <li>
+                      Betrayal-filled dungeon crawler - allies can be as
+                      dangerous as monsters
+                    </li>
+                    <li>Manage a party of greedy, unreliable companions</li>
+                    <li>Navigate dangerous rooms and keep trust high</li>
+                    <li>
+                      Pay the party after fights, heal wounds, or bribe for
+                      loyalty
+                    </li>
+                    <li>Gold management as a core survival loop</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="stack-lg reveal" style="--delay: 80ms">
+            <div>
+              <h3 class="card-title" data-i18n="game.links">Links</h3>
+              
+              <ul class="contact-list" style="margin-top: 0.85rem">
+                <li>
+                  <a
+                    href="https://scumpii.itch.io/skulds-bargain"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span>itch.io</span>Skuld's Bargain</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-legal">
+          
+          <p data-i18n="footer.rights">
+            © 2026 YOUR NAME. All rights reserved. All content on this site -
+            including games, media, text, and branding - belongs to YOUR NAME
+            unless otherwise stated.
+          </p>
+          <p data-i18n="footer.note">
+            Unauthorized copying or redistribution is prohibited.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/embed.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/stamp.js"></script>
+  </body>
+</html>
